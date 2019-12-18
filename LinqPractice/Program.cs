@@ -17,7 +17,7 @@ namespace LinqPractice
 =======
             Linq.Question4();
             Linq.questionOne();
-            Linq.DeterminingClassAverage();
+            Linq.Question3DeterminingClassAverage();
 
 
 >>>>>>> 0ced8caaf746d39921820d86e8e43970892e1f05
