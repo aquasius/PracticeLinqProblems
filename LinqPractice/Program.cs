@@ -10,6 +10,10 @@ namespace LinqPractice
     {
         static void Main(string[] args)
         {
+            Linq.Question2();
+            
+            
+
         }
     }
 }
