@@ -64,13 +64,12 @@ namespace LinqPractice
                 var averageStudentGrade = updatedClassGrades.Average();
                 studentGrades.Add(averageStudentGrade);
 
+                updatedClassGrades.Clear();
             }
-            
+
             var averageClassGrade = studentGrades.Average();
 
            Console.WriteLine(averageClassGrade);
-
-            //Expected output: 86.125
         }
 
         public static void Question4()
