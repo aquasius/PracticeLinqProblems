@@ -10,7 +10,7 @@ namespace LinqPractice
     {
         static void Main(string[] args)
         {
-            Linq.Question4();
+            Linq.Question3();
             
             
 

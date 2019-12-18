@@ -20,20 +20,26 @@ namespace LinqPractice
 
         public static void Question4()
         {
-             Console.WriteLine("enter a string: ");
-             var alphabetize = Console.ReadLine().ToLower().OrderBy(str => str);
-             string result = "";
-             var letterCounter = alphabetize.GroupBy(str => str).Where(str => str.Count() > 0).Select(str => str.Count()).ToList();
-             var answer = alphabetize.Distinct();
-             answer = string.Concat(answer.Zip(letterCounter, (first, second) => first + "" + second));
-             result += answer;
-            
+            Console.WriteLine("enter a string: ");
+            var alphabetize = Console.ReadLine().ToLower().OrderBy(str => str);
+            string result = "";
+            var letterCounter = alphabetize.GroupBy(str => str).Where(str => str.Count() > 0).Select(str => str.Count()).ToList();
+            var answer = alphabetize.Distinct();
+            answer = string.Concat(answer.Zip(letterCounter, (first, second) => first + "" + second));
+            result += answer;
+
             Console.Write(result);
             Console.ReadLine();
-    
+
         }
 
 
 
+
+
+        
+
     }
+
+
 }
