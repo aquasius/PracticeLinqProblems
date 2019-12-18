@@ -35,7 +35,7 @@ namespace LinqPractice
 
         public static void Question3DeterminingClassAverage()
         {
-            List<int> studentGrades = new List<int>();
+            List<double> studentGrades = new List<double>();
             List<int> updatedClassGrades = new List<int>();
             List<string> classGrades = new List<string>()
             {
@@ -53,22 +53,24 @@ namespace LinqPractice
                 {
                     string newString = splitGrades[j].Trim();
 
-                    int newint = Int32.Parse(newString);
+                    var newint = Int32.Parse(newString);
 
                     updatedClassGrades.Add(newint);
                 }
 
-                studentGrades.Add(updatedClassGrades);
+                var lowestGrade = updatedClassGrades.Min();
+                updatedClassGrades.Remove(lowestGrade);
+
+                var averageStudentGrade = updatedClassGrades.Average();
+                studentGrades.Add(averageStudentGrade);
+
             }
+            
+            var averageClassGrade = studentGrades.Average();
+
+           Console.WriteLine(averageClassGrade);
 
             //Expected output: 86.125
-
-            //var lowestGradeDropped = updatedClassGrades.Where(grade => updatedClassGrades.Contains();
-
-            //var averageStudentGrade = updatedClassGrades.Select(lowestGradeDropped).Average();
-            //var averageClassGrade = updatedClassGrades.Select(averageStudentGrade).Average();
-
-            //Console.WriteLine(averageClassGrade);
         }
 
         public static void Question4()

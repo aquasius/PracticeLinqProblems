@@ -12,7 +12,7 @@ namespace LinqPractice
         {
             Linq.Question4();
             Linq.questionOne();
-            Linq.DeterminingClassAverage();
+            Linq.Question3DeterminingClassAverage();
 
 
 
