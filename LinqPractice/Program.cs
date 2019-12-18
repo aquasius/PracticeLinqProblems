@@ -11,8 +11,10 @@ namespace LinqPractice
         static void Main(string[] args)
         {
             Linq.Question4();
-            
-            
+            Linq.questionOne();
+            Linq.DeterminingClassAverage();
+
+
 
         }
     }
